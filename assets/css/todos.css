@@ -1,0 +1,106 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #00C9FF;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+	background: #2980b9;
+	/*font color to be white*/
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+	/*font to be uppercase*/
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: 400;
+}
+
+.fa-plus {
+	/*push it to the right side*/
+	float: right;
+}
+
+.fa-check-circle {
+	margin: 11px 10px;
+	float: right;
+	opacity: 1;
+}
+
+ul {
+	/*get rid of the bullet points*/
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+li {
+	background: #fff;
+	/*adjust the height of each line*/
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+
+li:nth-child(2n){
+	background: #f7f7f7
+}
+
+span {
+	background: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0px;
+	/*what it means?*/
+	display: inline-block;
+	/*add some animation: */
+	transition: 0.2s linear;
+	/*make it totally invisible when not hovering*/
+	opacity: 0;
+
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1;
+}
+
+input {
+	font-size: 18px;
+	color: #2980b9;
+	margin: 0;
+	background-color: #f7f7f7;
+	/*the width is only the content, not include padding and margin*/
+	width: 100%;
+	/*13 on the top 13 on the right 13 on the bottom 20 on the left*/
+	padding: 13px 13px 13px 20px;
+	/*control the box size*/
+	box-sizing: border-box;
+	/*get rid of the small border*/
+	border: 3px solid rgba(0, 0, 0, 0);
+}
+
+input:focus{
+	background: #fff;
+	/*anoying heightlight of the box*/
+	outline: none;
+}
+
+#container {
+	width: 360px;
+	/*if it is 0 we do not need px*/
+	margin: 100px auto;
+	background: #f7f7f7;
+	/*a slight shdow around the element*/
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.completed {
+	color: silver;
+	text-decoration: line-through;
+}
